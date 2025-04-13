@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js"
-  
+  "deploy":npm run deploy
 
   },
   "dependencies": {
