@@ -1,0 +1,120 @@
+/* Navbar styles */
+.custom-navbar {
+    background-color: #1a1a1a; /* Dark background for navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-navbar .navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #c0c0c0; /* Silver color */
+    text-transform: uppercase;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .custom-navbar .navbar-brand:hover {
+    color: #fff; /* White on hover */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
+  
+  .custom-navbar .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #c0c0c0; /* Silver color */
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.2s ease, text-shadow 0.3s ease;
+  }
+  
+  .custom-navbar .navbar-nav .nav-link:hover {
+    color: #fff; /* White color on hover */
+    transform: scale(1.1); /* Scale effect */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
+  
+  .custom-navbar .navbar-nav .nav-link.active {
+    color: #fff !important; /* White color for active links */
+  }
+  
+  .custom-navbar .navbar-nav .btn-outline-light {
+    color: #c0c0c0;
+    border: 1px solid #c0c0c0;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    padding: 8px 20px;
+  }
+  
+  .custom-navbar .navbar-nav .btn-outline-light:hover {
+    background-color: #c0c0c0;
+    color: #1a1a1a;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
+  
+  .custom-navbar .navbar-nav .btn-outline-light.ms-3 {
+    margin-left: 15px; /* Space between Logout and other buttons */
+  }
+  
+  .custom-navbar .navbar-nav .custom-link {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .custom-navbar .navbar-nav .custom-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #c0c0c0;
+    transition: width 0.3s ease;
+  }
+  
+  .custom-navbar .navbar-nav .custom-link:hover:after {
+    width: 100%;
+  }
+  
+  @media (max-width: 992px) {
+    .custom-navbar .navbar-nav {
+      text-align: center;
+    }
+    .custom-navbar .navbar-nav .nav-link {
+      padding: 8px;
+    }
+  }
+  
+  /* Adjustments for smooth scrolling and full view height */
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  html, body {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  @media (max-width: 576px) {
+    .custom-navbar .navbar-nav {
+      display: block;
+      text-align: center;
+    }
+    .custom-navbar .navbar-nav .nav-item {
+      margin: 10px 0;
+    }
+  }
+  

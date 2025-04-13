@@ -1,0 +1,111 @@
+/* General Styles */
+.placebid-container {
+    min-height: 100vh;
+    background-color: #0f0f0f;
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+    padding: 40px 20px;
+    overflow-y: auto; /* Ensure scrolling works */
+  }
+  
+  /* Title Styling */
+  .placebid-container h2 {
+    font-size: 2.5rem;
+    color: silver;
+  }
+  
+  /* Price Filter Section */
+  .price-filter {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .price-filter label {
+    font-size: 1.2rem;
+  }
+  
+  .price-filter-input {
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #444;
+    font-weight: bold;
+    padding: 10px;
+    width: 50%;
+    margin-top: 10px;
+  }
+  
+  /* Auction Card Styles */
+  .auction-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .auction-card {
+    width: 30%;
+    margin-bottom: 20px;
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .auction-card:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .card-body {
+    padding: 0;
+  }
+  
+  .card-body h5 {
+    font-weight: bold;
+  }
+  
+  .card-body p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Dropdown Styles */
+  .dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .dropdown-item {
+    font-size: 0.9rem;
+  }
+  
+  /* Place Bid Button */
+  .place-bid-btn {
+    background: linear-gradient(to right, #c0c0c0, #dcdcdc);
+    color: #111;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .place-bid-btn:hover {
+    background: linear-gradient(to right, #a0a0a0, #c0c0c0);
+    filter: brightness(1.1);
+  }
+  
+  .place-bid-btn:active {
+    filter: brightness(0.9);
+  }
+  

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Space+Grotesk:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+  background-color: #000;
+  overflow: hidden;
+  color: #f5f5f5;
+}
+
+.home-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #222 0%, #111 100%);
+}
+
+.hero-glass {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  letter-spacing: 2px;
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.sub-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #e0e0e0;
+  margin: 10px 0 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.tagline {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #bbb;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.8rem;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-glow {
+  border-radius: 15px;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.primary-btn {
+  background: linear-gradient(to right, #444, #c0c0c0);
+  color: #111;
+  border: 2px solid #444;
+}
+
+.primary-btn:hover {
+  background: #c0c0c0;
+  color: #111;
+  border: 2px solid #222;
+  transform: scale(1.07);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  text-decoration: underline;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #aaa;
+  color: #eee;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 2px solid #ddd;
+  transform: scale(1.07);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.3);
+  text-decoration: underline;
+}
+
+/* Fade-in effect for all elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aurora {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.06));
+  z-index: 0;
+}
